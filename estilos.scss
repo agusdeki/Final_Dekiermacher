@@ -1,13 +1,12 @@
 /* http://localhost:5500/pages/index.html */
-html, body{
+    html, body{
     margin: 0px;
     padding: 0px;
     /* comportamiento del scroll... entonces en este caso es despacio */
     scroll-behavior: smooth;
-}
-
-$font-weights: ("regular": 400, "medium": 500, "bold": 700); 
-$colores: ("color1": #222, "color2": #333);
+    }
+    $font-weights: ("regular": 400, "medium": 500, "bold": 700); 
+    $colores: ("color1": #222, "color2": #333);
 
 // incluir un fragmento de codigo:
 // @include
@@ -17,17 +16,15 @@ $colores: ("color1": #222, "color2": #333);
 // @extend
 
 // definimos un fragmento de codigo reutilizable
-@mixin flex-center {
+    @mixin flex-center {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-
-header {
-    nav {
-        div {
-            a{
+    }   
+    header {
+        nav {
+            div {
+                a{
                 /* separacion entre cada elemento */
                 margin: 20px;
                 /* tamaño de la letra */
@@ -35,12 +32,12 @@ header {
                 font-weight: map.get($font-weights, "regular");
                 color: white;
                 /* subrayado de texto */
-                text-decoration: none;
-            } 
-    }
-} 
-}
-main{
+                text-decoration: none;               
+                }
+                } 
+                }
+                }
+        main{
     // incluimos un mixin
     @include flex-center;
     flex-direction: row;
@@ -55,134 +52,127 @@ main{
     background-repeat: no-repeat;
     /* tamaño del fondo... cover significa que la imagen se agrande hasta que llegue al tamaño de su elemento */
     background-size: cover;
-}
-main {
-    div{
-    /* ancho */
-    min-width: 40vw;
-    color: white;
-    text-align: center;
-    
-}
-}
-main p{
+    }
+    main {
+        div{
+        /* ancho */
+        min-width: 40vw;
+        color: white;
+        text-align: center;
+            }
+        }
+    main p{
     font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
     text-decoration: solid;
-}
-#fotografias{
+        }
+    #fotografias{
     min-height: 100vh;
     background-color: rgb(34, 34, 34);
     text-align: center;
     color: white;
     padding-top: 20px;
-}
-#fotografias {
-    h1{
+    }
+    #fotografias {
+        h1{
         @extend body;
-    }
-}
-.galleriaDeFotos{ 
-    div{
-    margin: 10px;
-    }
-}
-.galleriaDeFotos {
-    div {
-        img{
-    max-width: 300px;
         }
     }
-}
-
-#sobre-mi{
+    .galleriaDeFotos{ 
+        div{
+    margin: 10px;
+        }
+    }
+    .galleriaDeFotos {
+        div {
+            img{
+    max-width: 300px;
+            }
+        }
+    }
+    #sobre-mi{
     min-height: 40vh;
     background-color: #333;
     text-align: center;
     @include flex-center;
     flex-direction: column;
-}
-
-#sobre-mi { 
-    h1{
+        }
+    #sobre-mi { 
+        h1{
     margin: 0px;
     color: white;
-  }
-}
-#sobre-mi {
+        }
+        }
+    #sobre-mi {
     div{
     @include flex-center;
     padding: 50px;
     height: 100%;
-  }
-}
-#sobre-mi {
+        }
+    }
+    #sobre-mi {
     div {
         p{
     color: white;
+            }
         }
     }
-}
 
-#experiencia{
+    #experiencia{
     min-height: 40vh;
     background-color: #222;
     text-align: center;
     @include flex-center;
     flex-direction: column;
-}
-#experiencia {
+    }
+    #experiencia {
     h1{
     margin: 0px;
     color: white;
     }
-}
-#experiencia {
+    }
+    #experiencia {
     div{
     @include flex-center;
     padding: 50px;
     height: 100%;
     }
-}
-#experiencia {
+    }
+    #experiencia {
     div { 
         p{
     color: white;
     text-align:justify;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+            }
         }
     }
-}
-
-#contacto{
+    #contacto{
     @include flex-center;
     flex-direction: column;
     background-color: #222;
     color: white;
-}
-#contacto { 
+    }
+    #contacto { 
     form {
         @include flex-center;
         flex-direction: column;
     }
-}
-#contacto {
+    }
+    #contacto {
     form {
         input{
     margin: 15px;
         }
     }
-}
-footer{
+    }
+    footer{
     margin: 0px;
     padding: 5px;
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 35%, rgba(0,212,255,1) 100%);
-
 }
-footer h1{
-    text-align: center;
-    display: flex;
-    justify-content: center;
+    footer h1{
+    @include flex-center;
     color: white;
-}
+    }
