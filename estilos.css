@@ -5,9 +5,8 @@ html, body, #fotografias h1 {
   padding: 0px;
   /* comportamiento del scroll... entonces en este caso es despacio */
   scroll-behavior: smooth;
-}
-
-header nav div a {
+  }
+  header nav div a {
   /* separacion entre cada elemento */
   margin: 20px;
   /* tamaño de la letra */
@@ -15,9 +14,8 @@ header nav div a {
   color: white;
   /* subrayado de texto */
   text-decoration: none;
-}
-
-main {
+  }
+  main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -42,39 +40,33 @@ main {
   background-repeat: no-repeat;
   /* tamaño del fondo... cover significa que la imagen se agrande hasta que llegue al tamaño de su elemento */
   background-size: cover;
-}
-
-main div {
+  }
+  main div {
   /* ancho */
   min-width: 40vw;
   color: white;
   text-align: center;
-}
-
-main p {
+  }
+  main p {
   font-size: 30px;
   font-family: 'Times New Roman', Times, serif;
   -webkit-text-decoration: solid;
           text-decoration: solid;
-}
-
-#fotografias {
+  }
+  #fotografias {
   min-height: 100vh;
   background-color: #222222;
   text-align: center;
   color: white;
   padding-top: 20px;
-}
-
-.galleriaDeFotos div {
+  }
+  .galleriaDeFotos div {
   margin: 10px;
-}
-
-.galleriaDeFotos div img {
+  }
+  .galleriaDeFotos div img {
   max-width: 300px;
-}
-
-#sobre-mi {
+  }
+  #sobre-mi {
   min-height: 40vh;
   background-color: #333;
   text-align: center;
@@ -91,14 +83,12 @@ main p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-#sobre-mi h1 {
+  }
+  #sobre-mi h1 {
   margin: 0px;
   color: white;
-}
-
-#sobre-mi div {
+  }
+  #sobre-mi div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -110,13 +100,11 @@ main p {
           align-items: center;
   padding: 50px;
   height: 100%;
-}
-
-#sobre-mi div p {
+  }
+  #sobre-mi div p {
   color: white;
-}
-
-#experiencia {
+  }
+  #experiencia {
   min-height: 40vh;
   background-color: #222;
   text-align: center;
@@ -133,14 +121,12 @@ main p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-#experiencia h1 {
+  }
+  #experiencia h1 {
   margin: 0px;
   color: white;
-}
-
-#experiencia div {
+  }
+  #experiencia div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -152,15 +138,13 @@ main p {
           align-items: center;
   padding: 50px;
   height: 100%;
-}
-
-#experiencia div p {
+  }
+  #experiencia div p {
   color: white;
   text-align: justify;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-#contacto {
+  }
+  #contacto {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -176,9 +160,8 @@ main p {
           flex-direction: column;
   background-color: #222;
   color: white;
-}
-
-#contacto form {
+  }
+  #contacto form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -192,21 +175,18 @@ main p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-#contacto form input {
+  }
+  #contacto form input {
   margin: 15px;
-}
-
-footer {
+  }
+  footer {
   margin: 0px;
   padding: 5px;
   background: #020024;
   background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(35%, black), to(#00d4ff));
-  background: linear-gradient(90deg, #020024 0%, black 35%, #00d4ff 100%);
-}
-
-footer h1 {
+  background: linear-gradient(90deg, #020024 0%, black 35%, #00d4ff 100%); 
+  }
+  footer h1 {
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -215,5 +195,5 @@ footer h1 {
       -ms-flex-pack: center;
           justify-content: center;
   color: white;
-}
-/*# sourceMappingURL=estilos.css.map */
+  }
+  /*# sourceMappingURL=estilos.css.map */
