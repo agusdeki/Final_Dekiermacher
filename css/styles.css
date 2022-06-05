@@ -58,6 +58,11 @@ main>div{
     text-align: center;
     
 }
+img{
+    width: 70px;
+    height: 200px;
+    padding: 0px;
+    }
 main p{
     font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
